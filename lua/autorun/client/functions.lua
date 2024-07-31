@@ -1,9 +1,3 @@
-
-function createhologram(parent, owner, data)
-    local hologram = ents.CreateClientside('he_hologram')
-    hologram.Owner = owner
-end
-
 function load_editor(player, parts_table)
     local table_of_funny_faces = {
         '(⓿_⓿)',
@@ -22,15 +16,7 @@ function load_editor(player, parts_table)
     local txt = 'Hologram Editor: '..table_of_funny_faces[picked_face]
 
     if #parts_table <= 0 then
-        table.insert(parts_table,1,{
-            model = 'models/hunter/blocks/cube025x025x025.mdl',
-            material = '',
-            color = Vector(1, 1, 1),
-            position = Vector(0, 0, 0),
-            angle = Angle(0, 0, 0)
-        })
-
-        createhologram(nil, player, parts_table[1])
+        -- create a new object and add to the table
     end
 
     local main_panel = vgui.Create('DFrame')
