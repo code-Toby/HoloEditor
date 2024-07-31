@@ -1,6 +1,6 @@
 list.Set( 'DesktopWindows', 'Holo_Editor', {
     title = 'Hologram Editor',
-    icon = 'icon32/tool.png',
+    icon = 'icon16/layout_edit.png',
     init = function( icon, window )
         LocalPlayer():ConCommand( "hologram_editor" )
     end

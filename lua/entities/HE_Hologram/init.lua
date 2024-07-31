@@ -3,8 +3,8 @@ AddCSLuaFile("shared.lua")
 include("shared.lua")
 
 function ENT:Initialize()
-    self.Model = 'models/hunter/blocks/cube025x025x025.mdl'
-    self.Material = 'models/debug/debugwhite'
+    self.Model = 'models/holograms/cube.mdl'
+    self.Material = ''
     self.Color = Color(255, 255, 255, 255)
 
     self:SetModel(self.Model)
