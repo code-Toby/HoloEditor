@@ -1,6 +1,7 @@
 
 function createhologram(parent, owner, data)
-    
+    local hologram = ents.CreateClientside('he_hologram')
+    hologram.Owner = owner
 end
 
 function load_editor(player, parts_table)
